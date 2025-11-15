@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reactive-app-config
+  labels:
+    app: spring-reactive-app
+data:
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres:5432/reactivedb"
+  SPRING_DATASOURCE_USERNAME: "postgres"
+  SPRING_DATASOURCE_PASSWORD: "postgres"
+  SERVER_PORT: "8080"
